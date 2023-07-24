@@ -148,7 +148,7 @@ contract Raffle is VRFConsumerBaseV2 {
         uint256 /*requestID*/,
         uint256[] memory randomWords
     ) internal override {
-        //Checks -> if() revert <error>; || revert()
+        //Checks -> if() revert <error>; || require()
 
         //Effects -> our own contracts
         uint256 indexOfWinner = randomWords[0] % s_players.length;
